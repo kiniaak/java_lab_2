@@ -12,9 +12,13 @@ public class Main {
         c) napisać metodę, która wypisze otrzymane wartości,
         d) wstawić wywołanie metody do metody main
         */
-        int[]tab=new int[20];
-        int j=0;
-        public static void metoda () {
+          int[]tab=new int[20];
+          metoda(tab);
+
+    }
+
+        public static void metoda(int[]tab) {
+
             for (int zmienna:tab) {
                 for (int j = 40; j >=20 ; j--) {
                    tab[zmienna]=j;
@@ -48,4 +52,4 @@ public class Main {
 
     }
 
-}
+
