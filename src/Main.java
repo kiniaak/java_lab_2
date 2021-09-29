@@ -12,11 +12,16 @@ public class Main {
         Scanner scan=new Scanner(System.in);
         System.out.println("Podaj numer indeksu");
         int indeks=scan.nextInt();
-        for (int i = 0; i <=100 ; i++) {
-            if (i % (indeks % 10) == 0) {
-                System.out.println("Liczba podzielna przez ostatnią cyfrę mojego indeksu:" + i);
-            } else if (indeks%10==0) {
-                System.out.println("Liczba podzielna przez dwie ostatnie cyfry mojego indeksu:" + i % (indeks % 100) == 0);
+
+            for (int i = 0; i <= 100; i++) {
+
+                if ((i % (indeks % 10)) == 0) {
+
+                    System.out.println("Liczba podzielna przez ostatnią cyfrę mojego indeksu:" + i);
+                } else if (indeks % 10 == 0) {
+
+                    System.out.println("Liczba podzielna przez dwie ostatnie cyfry mojego indeksu:" + ((i % (indeks % 100)) == 0));
+                }
             }
         }
 
