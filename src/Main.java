@@ -9,6 +9,23 @@ public class Main {
         b) w drugiej pętli continue
         c) w trzeciej pętli return
         */
+        for (int i = 0; i <30 ; i++) {
+            if (i == 20)
+                break;
+            System.out.println("i=" + i);
+        }
 
+        for (int i = 0; i <20 ; i++) {
+            if(i%2==0)
+                continue;
+            System.out.println("i="+ i);
+        }
+        for (int i = 0; i < 50; i++) {
+            if(i==30)
+                return;
+            System.out.println("i="+i);
+            
+        }
+        
     }
 }
