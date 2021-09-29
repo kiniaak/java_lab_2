@@ -36,22 +36,28 @@ public class Main {
             "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
            b) oraz ma określić ile jest pozostałych liter, które nie należą do: 'o', 'p', 'x', 'z', 'q'
          */
-        String text = "aabaacbbaa";
-        int[] tablica = {0, 0, 0};
+        String text = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
+        int[] tablica = {0, 0, 0,0,0};
         for (char zmiennaChar : text.toCharArray()) {
             switch (zmiennaChar) {
-                case 'a':
+                case 'o':
                     ++tablica[0];
                     break;
-                case 'b':
+                case 'p':
                     ++tablica[1];
                     break;
-                case 'c':
+                case 'x':
                     ++tablica[2];
+                    break;
+                case 'z':
+                    ++tablica[3];
+                    break;
+                case 'q':
+                    ++tablica[4];
                     break;
             }
         }
-        System.out.printf("\nLiczba występuje\na: %d - razy\nb: %d - razy\nc: %d - razy",
+        System.out.printf("\nLiczba występuje\na: %d - razy\nb: %d - razy\nc: %d - razy\n",
                 tablica[0], tablica[1], tablica[2]);
     }
 }
