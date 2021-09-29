@@ -13,7 +13,7 @@ public class Main {
           a) ta liczba jest parzysta --> podpowiedz switch(a % 2) {
           b) program który określi czy liczba jest podzielna przez 7
          */
-           Scanner scan=new Scanner(System.in);
+          /* Scanner scan=new Scanner(System.in);
         System.out.println("Podaj liczbę");
            int num= scan.nextInt();
            switch(num%2){
@@ -36,6 +36,22 @@ public class Main {
             "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
            b) oraz ma określić ile jest pozostałych liter, które nie należą do: 'o', 'p', 'x', 'z', 'q'
          */
-
+        String text = "aabaacbbaa";
+        int[] tablica = {0, 0, 0};
+        for (char zmiennaChar : text.toCharArray()) {
+            switch (zmiennaChar) {
+                case 'a':
+                    ++tablica[0];
+                    break;
+                case 'b':
+                    ++tablica[1];
+                    break;
+                case 'c':
+                    ++tablica[2];
+                    break;
+            }
+        }
+        System.out.printf("\nLiczba występuje\na: %d - razy\nb: %d - razy\nc: %d - razy",
+                tablica[0], tablica[1], tablica[2]);
     }
 }
