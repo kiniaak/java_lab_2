@@ -12,7 +12,16 @@ public class Main {
         c) napisać metodę, która wypisze otrzymane wartości,
         d) wstawić wywołanie metody do metody main
         */
-
+        int[]tab=new int[20];
+        int j=0;
+        public static void metoda () {
+            for (int zmienna:tab) {
+                for (int j = 40; j >=20 ; j--) {
+                   tab[zmienna]=j;
+                    System.out.println(tab[zmienna]);
+                }
+            }
+        }
         /* zad.2
         a) stworzyc tablicę typu String[6],
         b) napisać metodę która uzupełni tablicę wartościami podawanymi z klawiatury
