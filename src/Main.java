@@ -19,8 +19,9 @@ public class Main {
 
                     System.out.println("Liczba podzielna przez ostatnią cyfrę mojego indeksu:" + i);
                 } else if (indeks % 10 == 0) {
+                      continue;
 
-                    System.out.println("Liczba podzielna przez dwie ostatnie cyfry mojego indeksu:" + ((i % (indeks % 100)) == 0));
+                    System.out.println("Liczba podzielna przez dwie ostatnie cyfry mojego indeksu:" + (i % (indeks % 100))==0) );
                 }
             }
         }
@@ -31,5 +32,5 @@ public class Main {
          * wprowadzanymi z klawiatury (użyć klasy Scanner), a następnie będzie wyświetlał elementy tablicy
          * za pomocą pętli forEach powiększone o 11 */
 
-    }
+
 
