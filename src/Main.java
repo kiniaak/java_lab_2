@@ -16,17 +16,19 @@ public class Main {
            Scanner scan=new Scanner(System.in);
         System.out.println("Podaj liczbę");
            int num= scan.nextInt();
-           switch(num){
-               case 1:
+           switch(num%2){
+               case 0:
 
-                      System.out.println((num%2==0)+"Liczba jest parzysta");
+                      System.out.println("Liczba jest parzysta");
 
                   break;
-               case 2:
-                   if(num%7==0)
-                   {
-                       System.out.println("Liczba jest podzielna przez 7");
-                   }
+
+           }
+        System.out.println("Podaj liczbę");
+           int num1= scan.nextInt();
+           switch(num1%7){
+               case 0:
+                   System.out.println("Liczba jest podzielna przez 7");
 
            }
         /* zad.2
