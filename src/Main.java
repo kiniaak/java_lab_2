@@ -60,7 +60,7 @@ public class Main {
                  a następnie przeiterować i wyświetlić forEach-em (jak wyżej)
          */
 
-          Set<Integer>liczby=new TreeSet<>();
+          Set<Integer>liczby=new TreeSet<Integer>();
           liczby.add(4);
         liczby.add(4);
         liczby.add(3);
@@ -72,8 +72,12 @@ public class Main {
         liczby.add(1);
         liczby.add(8);
 
-        Collections.sort(liczby);
+
         System.out.println(liczby);
+        for (int liczba:liczby
+             ) {
+            System.out.println(liczba);
+        }
 
 
     }
