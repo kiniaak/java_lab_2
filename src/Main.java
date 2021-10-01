@@ -1,6 +1,9 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 
 public class Main {
 
@@ -18,13 +21,37 @@ public class Main {
                 d) następnie proszę wykonać odwrotne sortowanie i znów użyć metody z punktu b) do wyświetlenia
                 elementów listy
           */
-         Scanner scan=new Scanner(System.in);
-           List<String>zwierze=new ArrayList<>(5);
-        System.out.println("Podaj nazwe zwierzecia:");
-        for (int i=0;i< zwierze.size();i++)
-        {
+        Scanner scan = new Scanner(System.in);
+        List<String> zwierzeta = new ArrayList<>();
+        zwierzeta.add("Kot");
+        zwierzeta.add("Pies");
+        zwierzeta.add("Kon");
+        zwierzeta.add("Owca");
+        zwierzeta.add("Lew");
+
+        zwierzeta.remove(3);
+        zwierzeta.remove(4);
+        zwierzeta.add("Chomik");
+        zwierzeta.add("Swinka morska");
+        zwierzeta.add("Wąż");
+        Wyswietlliste(zwierzeta);
+    }
+
+    public static void Wyswietlliste(List<String>zwierzeta) {
+        for (String zwierze:zwierzeta
+             ) {
+            System.out.println(zwierze);
 
         }
+        System.out.println(zwierzeta.size());
+
+    }
+
+
+}
+
+
+        
 
          /* zad.2 Napisać program który stworzy Set<Integer> i wprowadzamy 10 liczb z klawiatury
                 niech liczby się powtarzają, proszę posortować a następnie wyświetlić zawartość set-a w konsoli
@@ -32,6 +59,6 @@ public class Main {
          */
 
 
-    }
 
-}
+
+
