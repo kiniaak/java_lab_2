@@ -18,7 +18,13 @@ public class Main {
                 d) następnie proszę wykonać odwrotne sortowanie i znów użyć metody z punktu b) do wyświetlenia
                 elementów listy
           */
+         Scanner scan=new Scanner(System.in);
+           List<String>zwierze=new ArrayList<>(5);
+        System.out.println("Podaj nazwe zwierzecia:");
+        for (int i=0;i< zwierze.size();i++)
+        {
 
+        }
 
          /* zad.2 Napisać program który stworzy Set<Integer> i wprowadzamy 10 liczb z klawiatury
                 niech liczby się powtarzają, proszę posortować a następnie wyświetlić zawartość set-a w konsoli
