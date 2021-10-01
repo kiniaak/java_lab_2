@@ -60,6 +60,21 @@ public class Main {
                  a następnie przeiterować i wyświetlić forEach-em (jak wyżej)
          */
 
+          Set<Integer>liczby=new TreeSet<>();
+          liczby.add(4);
+        liczby.add(4);
+        liczby.add(3);
+        liczby.add(5);
+        liczby.add(8);
+        liczby.add(9);
+        liczby.add(2);
+        liczby.add(0);
+        liczby.add(1);
+        liczby.add(8);
+
+        Collections.sort(liczby);
+        System.out.println(liczby);
+
 
     }
 }
