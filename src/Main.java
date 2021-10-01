@@ -1,8 +1,6 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class Main {
@@ -21,7 +19,7 @@ public class Main {
                 d) następnie proszę wykonać odwrotne sortowanie i znów użyć metody z punktu b) do wyświetlenia
                 elementów listy
           */
-        Scanner scan = new Scanner(System.in);
+      /*  Scanner scan = new Scanner(System.in);
         List<String> zwierzeta = new ArrayList<>();
         zwierzeta.add("Kot");
         zwierzeta.add("Pies");
@@ -29,11 +27,12 @@ public class Main {
         zwierzeta.add("Owca");
         zwierzeta.add("Lew");
 
-        zwierzeta.remove(3);
-        zwierzeta.remove(4);
+        zwierzeta.remove("Owca");
+        zwierzeta.remove("Lew");
         zwierzeta.add("Chomik");
         zwierzeta.add("Swinka morska");
         zwierzeta.add("Wąż");
+        Collections.sort(zwierzeta,Collections.reverseOrder());
         Wyswietlliste(zwierzeta);
     }
 
@@ -43,12 +42,15 @@ public class Main {
             System.out.println(zwierze);
 
         }
+
         System.out.println(zwierzeta.size());
 
     }
 
 
 }
+
+       */
 
 
         
@@ -59,6 +61,7 @@ public class Main {
          */
 
 
-
+    }
+}
 
 
