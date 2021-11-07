@@ -8,6 +8,8 @@ public class Main {
           Jeśli liczba będzie podzielna przez 2 ostatnie cyfry waszego indexu (podać nr indexu)
           to dać komunikat "liczba XX podzielna przez YY" (XX-liczba podzielna YY-podzielnik)
         */
+
+
         int i = 1000;
         int indeks = 57071;
         int n = indeks % 100;
@@ -25,17 +27,32 @@ public class Main {
         b) jak wyżej tylko dla tablicy typu double[],
         c) jak wyżej dla tablicy String[], przeiterować i wyświetlić od ostatniego elementu
         */
-        int[] tab = new int[]{0, 3, 6, 87, 9};
+       /*a) int[] tab = new int[]{0, 3, 6, 87, 9};
 
         int j = 0;
         while (j < 5) {
             System.out.println("tab[j]:" + tab[j]);
             j++;
         }
+        b) double[] tab = new double[]{0.3, 3.4, 6.2, 87.6, 9.2};
+
+        int j = 0;
+        while (j < 5) {
+            System.out.println("tab[j]:" + tab[j]);
+            j++;
+        */
+       /*c) String[]tab=new String[]{kot,pies,lalka,Olek,Ala};
+
+        while(j<5)
+        {   System.out.println("tab[j]:" + tab[j]);
+            j++;
+
+        }
         /* zad.3
         a) sprawdzić jak zachowuje się pętla while gdy w jej warunku damy true --> while(true)
         b) a jak gdy damy false --> while(false)
         */
+
         while (true) {
             System.out.println("Jesteśmy w domu");
         }
