@@ -13,12 +13,13 @@ public class Main {
         int lastDigit = 1;
 
 
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 100; i >= 0; i--) {
 
             if (i % lastDigit == 0) {
 
                 System.out.println("Liczba podzielna przez ostatnią cyfrę mojego indeksu:" + i);
             }
+            i--;
         }
 
 
