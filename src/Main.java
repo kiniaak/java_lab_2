@@ -8,6 +8,8 @@ public class Main {
           Jeśli liczba będzie podzielna przez 2 ostatnie cyfry waszego indexu (podać nr indexu)
           to dać komunikat "liczba XX podzielna przez YY" (XX-liczba podzielna YY-podzielnik)
         */
+
+
         int i = 1000;
         int indeks = 57071;
         int n = indeks % 100;
